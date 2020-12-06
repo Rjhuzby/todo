@@ -25,6 +25,7 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/todo/main/templates" />
+        <option value="$MODULE_DIR$/todo/list_item/templates" />
       </list>
     </option>
   </component>
