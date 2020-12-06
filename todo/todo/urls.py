@@ -16,11 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from main.views import main_view
+from list_item.views import item_view
+
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main_view)
-    #path('/item', item_view)
-
+    path('', main_view),
+    path('item/', item_view)
 
 ]

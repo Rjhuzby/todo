@@ -2,13 +2,15 @@ from django.shortcuts import render
 
 data = {
     'lists': [
-        {'name': 'Забрать заказ', 'is_done': True, 'date': '01.12.2019'},
-        {'name': 'Дом', 'is_done': False},
-        {'name': 'Учеба', 'is_done': True}
+        {'name': 'Забрать заказ', 'is_done': False},
+        {'name': 'Сделать уборку', 'is_done': False},
+        {'name': 'Написать вьюшку', 'is_done': True}
     ],
     'user_name': 'Admin',
 }
 
-def main_view(request):
+def item_view(request):
     context = data
-    return render(request, 'index.html', context)
+    return render(request, 'item.html', context)
+
+
